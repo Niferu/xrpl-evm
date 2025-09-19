@@ -6,7 +6,7 @@ import {Counter} from "../src/Counter.sol";
 
 contract DeployCounter is Script {
     function run() public {
-        uint deployerKey = vm.envUint("PRIVATE_KEY");
+        uint256 deployerKey = vm.envUint("PRIVATE_KEY");
 
         vm.startBroadcast(deployerKey);
 
